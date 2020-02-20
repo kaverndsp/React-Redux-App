@@ -13,12 +13,14 @@ const store = createStore(reducer, applyMiddleware(thunk));
 
 function App() {
   return (
+   
     <Provider store={store}>
     <div className="App">
-      <h1>Genre Generator</h1>
+      <h1 className="header">Genre Generator</h1>
       <EventForm/>
     </div>
     </Provider>
+    
   );
 }
 

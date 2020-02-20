@@ -3,6 +3,9 @@ import {connect} from "react-redux";
 
 import {getData} from "../actions/index";
 import EventsList from "./EventsList";
+import Button from '@material-ui/core/Button';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import LinearProgress from '@material-ui/core/LinearProgress';
 
 const EventForm = (props) => {
 
@@ -13,7 +16,7 @@ const handleGetData = e => {
 
     return(
     <>
-    {props.isFetchingData ? (<div><b>***We are currently grabbing the data***</b></div>): (<button onClick={handleGetData}>Generate a New Genre</button>)}
+    {props.isFetchingData ? ( <> <Button variant="contained" color="primary" onClick={handleGetData}>Generate a New Genre</Button><LinearProgress className="progress" /> </>): ( <Button variant="contained" color="primary" onClick={handleGetData}>Generate a New Genre</Button>)}
     <EventsList/>
     </>
 )

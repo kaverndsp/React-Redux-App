@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  height: 100vh;
+  background-color: rgba(124, 170, 189, 0.199);
+  
+  
 }
 
 .App-logo {
@@ -35,4 +39,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+.header{
+  /* font-style: oblique; */
+  text-decoration: underline;
+  
+  margin-top: 0%;
+  font-size:3.5rem;
+}
+
+
+.genre{
+  margin-top: 15%;
+  font-size: 4.0rem;
+}
+.progress{
+  
+ 
 }

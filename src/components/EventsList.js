@@ -6,13 +6,15 @@ const EventsList = props => {
 
     return(
     <>
-    <p>{props.events}</p>
+    
+    <p className="genre">{props.events}</p>
     </>
 )
 }
 const mapStateToProps = state => {
     return{
-    events: state.events
+    events: state.events,
+    isFetchingData: state.isFetchingData
 }
 }
 
